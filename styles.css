@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+  padding: 0;
+	width: 100%;
+	height: 100vh;
+  min-height: 100%;
+	background-color: #ecdfdf;
+	color: #f1d36d;
+	display: flex;
+	font-family: 'Mali', cursive;
+}
+
+/*
+ * Registeration form
+ */
+.registeration {
+	margin: auto;
+	text-align: center;
+	border: 2px solid white;
+	min-width: 200px;
+	width: 300px;
+	height: 160px;
+	min-height: 100px;
+	border-radius: 10px;
+	animation: zoomIn 1s;
+	background-color: firebrick;
+}
+
+.close {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	cursor: pointer;
+}
+
+.registeration-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.registeration-buttons button {
+	width: 100px;
+	margin: 10px 0;
+	font-size: inherit;
+	background-color: #f1d36d;
+	outline: none;
+	border: 0;
+	box-shadow: 0 2px 6px #111;
+	cursor: pointer;
+}
+
+/*
+ * App
+ */
+.app {
+	display: none;
+	flex-wrap: wrap;
+	width: 100%;
+	animation: zoomIn 1s;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	margin: 0 50px 20px;
+}
+
+.filter-options {
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.filter-options h2 {
+	margin-bottom: 5px;
+}
+
+/*
+ * Left side
+ */
+.left-side {
+	width: 46%;
+	border-right: 1px solid #eee;
+	padding: 0 2%;
+	background-color: #86452d;
+	border-radius: 20px;
+	box-shadow: -4px 4px 10px #844f3c;
+}
+
+.multiple-authors {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #eee;
+	margin: 10px 0;
+}
+
+.multiple-authors:hover {
+	background-color: #f1d36d;
+	color: black;
+}
+
+.multiple-authors img {
+	width: 100px;
+	height: 110px;
+	padding-left: 100px;
+}
+
+.name-dob {
+	padding: 0 7px;
+	flex-direction: column;
+}
+
+.multiple-authors p {
+	padding: 5px;
+}
+
+.popup {
+	display: none;
+}
+
+.fa-star {
+	color: gold;
+}
+
+/*
+ * Right side
+ */
+.right-side {
+	width: 46%;
+	padding: 0 2%;
+	background-color: #86452d;
+	border-radius: 20px;
+	box-shadow: 4px 4px 10px #844f3c;
+}
+
+.multiple-books {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+
+.multiple-books:hover {
+	background-color: #f1d36d;
+	color: black;
+}
+
+.multiple-books img {
+	width: 100px;
+	height: 110px;
+}
+
+.book-content {
+	padding-left: 5px;
+}
+
+.book-content h3,
+.book-content h5 {
+	margin: 0 0 8.5px;
+}

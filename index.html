@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tea Computers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="registeration">
+		<span class="close"><i class="fa fa-times-circle"></i></span>
+		<h2>Welcome</h2>
+		<div class="registeration-buttons">
+			<button>Sign Up</button>
+			<button>Sign In</button>
+		</div>
+	</div>
+
+	<div class="app">
+		<h1 class="title">Tea Computers</h1>
+		<main class="main">
+			<div class="left-side">
+	      <div class="filter-options">
+	        <h2>Filter Results</h2>
+	        <select class="authors-select" aria-label="authors-select" name="authors" onchange="updateAuthors()">
+	          <option value="all">All Authors</option>
+	          <option value="all">Ranking</option>
+	          <option value="all">Alphabetical</option>
+	        </select>
+	      </div>
+				<div class="authors">
+					<div id="1" class="multiple-authors">
+						<img src="img/1.jpg" alt="JOHN ASAFU-ADJAYE">
+						<div class="name-dob">
+							<h3>Wally Lamb</h3>
+							<p>Oct 17th, 1950</p>
+						</div>
+						<p>Wally Lamb is the author of She's Come Undone, The Hour I First Believed, and I Know This Much Is True. Two were featured as selections of Oprah's Book Club. Lamb is the recipient of the Connecticut Center for the Book's Lifetime Achievement Award, the Connecticut Bar Association's Distinguished Public Service Award, the Connecticut Governor's Art Award, the Barnes & Noble Writers for Writers Award, the 1999 New England Book Award for Fiction, and the Missouri Review William Peden Fiction Prize.</p>
+						<div class="popup">
+							<p>Ranking is <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</p>
+						</div>
+					</div>
+					<div id="2" class="multiple-authors">
+						<img src="img/2.jpg" alt="Arthur Golden">
+						<div class="name-dob">
+							<h3>Arthur Golden</h3>
+							<p>Dec 6th, 1956</p>
+						</div>
+						<p>Arthur Golden was born in Chattanooga, Tennessee, and was educated at Harvard College, where he received a degree in art history, specializing in Japanese art. In 1980 he earned an M.A. in Japanese history from Columbia University, where he also learned Mandarin Chinese. Following a summer in Beijing University, he worked in Tokyo, and, after returning to the United States, earned an M.A. in English from Boston University.</p>
+						<div class="popup">
+							<p>Ranking is <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</p>
+						</div>
+					</div>
+					<div id="3" class="multiple-authors">
+						<img src="img/3.jpg" alt="Ian McEwan">
+						<div class="name-dob">
+							<h3>Ian McEwan</h3>
+							<p>Jun 21st, 1948</p>
+						</div>
+						<p>Ian McEwan studied at the University of Sussex, where he received a BA degree in English Literature in 1970 and later received his MA degree in English Literature at the University of East Anglia.</p>
+						<div class="popup">
+							<p>Ranking is <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</p>
+						</div>
+					</div>
+					<div id="4" class="multiple-authors">
+						<img src="img/4.jpg" alt="Kathryn Stockett">
+						<div class="name-dob">
+							<h3>Kathryn Stockett</h3>
+							<p>Unknown, 1969</p>
+						</div>
+						<p>Kathryn Stockett was born and raised in Jackson, Mississippi. After graduating from the University of Alabama with a degree in English and creative writing, she moved to New York City, where she worked in magazine publishing for nine years. She currently lives in Atlanta with her husband and daughter. She is working on her second novel.</p>
+						<div class="popup">
+							<p>Ranking is <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="filter-options">
+					<h2>Search Results</h2>
+					<input type="text" placeholder="Search by book name">
+				</div>
+				<div class="books">
+					<div id="1" class="multiple-books">
+						<img src="img/1.1.jpg" alt="She's Come Undone">
+						<div class="book-content">
+							<h3>She's Come Undone</h3>
+							<h5>Number of Borrows: 285</h5>
+							<h5>Author Name: Wally Lamb</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+							 <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="2" class="multiple-books">
+						<img src="img/1.2.jpg" alt="On Chesil Beach">
+						<div class="book-content">
+							<h3>On Chesil Beach</h3>
+							<h5>Number of Borrows: 60</h5>
+							<h5>Author Name: Ian McEwan</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+							 <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="3" class="multiple-books">
+						<img src="img/1.3.jpg" alt="Memoirs of a Geisha">
+						<div class="book-content">
+							<h3>Memoirs of a Geisha</h3>
+							<h5>Number of Borrows: 1529</h5>
+							<h5>Author Name: Arthur Golden</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="4" class="multiple-books">
+						<img src="img/1.4.jpg" alt="The Help">
+						<div class="book-content">
+							<h3>The Help</h3>
+							<h5>Number of Borrows: 1796</h5>
+							<h5>Author Name: Kathryn Stockett</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="5" class="multiple-books">
+						<img src="img/1.5.jpg" alt="The Handmaid's Tale">
+						<div class="book-content">
+							<h3>The Handmaid's Tale</h3>
+							<h5>Number of Borrows: 3</h5>
+							<h5>Author Name: Margaret Atwood</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="6" class="multiple-books">
+						<img src="img/1.6.jpg" alt="Wishin' and Hopin'">
+						<div class="book-content">
+							<h3>Wishin' and Hopin'</h3>
+							<h5>Number of Borrows: 13</h5>
+							<h5>Author Name: Wally Lamb</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="7" class="multiple-books">
+						<img src="img/1.7.jpg" alt="Bel Canto">
+						<div class="book-content">
+							<h3>Bel Canto</h3>
+							<h5>Number of Borrows: 10</h5>
+							<h5>Author Name: Ann Patchett</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="8" class="multiple-books">
+						<img src="img/1.8.jpg" alt="Atonement">
+						<div class="book-content">
+							<h3>Atonement</h3>
+							<h5>Number of Borrows: 12</h5>
+							<h5>Author Name: Ian McEwan</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+					<div id="9" class="multiple-books">
+						<img src="img/1.9.jpg" alt="I Know This Much Is True">
+						<div class="book-content">
+							<h3>I Know This Much Is True</h3>
+							<h5>Number of Borrows: 6</h5>
+							<h5>Author Name: Wally Lamb</h5>
+							<h5>Author Rate: <i class="fa fa-star"></i> <i class="fa fa-star"></i> out of 5</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
